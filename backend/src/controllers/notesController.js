@@ -9,6 +9,8 @@ export async function getAllNotes(req, res) {
     res.status(500).json({ message: "Internal Server Error" });
   }
 }
+
+// do this tmr
 export function createNote(req, res) {
   res.status(201).json({ message: "Note created successfully!" });
 }
