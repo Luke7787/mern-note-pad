@@ -10,15 +10,17 @@ export async function getAllNotes(req, res) {
   }
 }
 
-// do this tmr
-export function createNote(req, res) {
-  res.status(201).json({ message: "Note created successfully!" });
+export async function createNote(req, res) {
+  try {
+    const { title, content } = req.body;
+    console.log(title, content);
+  } catch (error) {}
 }
 
-export function updateNote(req, res) {
+export async function updateNote(req, res) {
   res.status(200).json({ message: "Note updated successfully!" });
 }
 
-export function deleteNote(req, res) {
+export async function deleteNote(req, res) {
   res.status(200).json({ message: "Note deleted successfully!" });
 }
