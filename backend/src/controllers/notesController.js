@@ -19,7 +19,7 @@ export async function getNoteById(req, res) {
     res.status(200).json(note);
   } catch (error) {
     console.error("Error in getNoteById", error);
-    res.status(500).json({ message: "Internal Server Error" });
+    res.status(500).json({ message: "Internal Server Error " });
   }
 }
 
